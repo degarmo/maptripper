@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		62E8F83927EBEA5900D5CA12 /* MapTripperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8F83827EBEA5900D5CA12 /* MapTripperApp.swift */; };
-		62E8F83B27EBEA5900D5CA12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8F83A27EBEA5900D5CA12 /* ContentView.swift */; };
+		62E8F83B27EBEA5900D5CA12 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8F83A27EBEA5900D5CA12 /* MapView.swift */; };
 		62E8F83D27EBEA5F00D5CA12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62E8F83C27EBEA5F00D5CA12 /* Assets.xcassets */; };
 		62E8F84027EBEA5F00D5CA12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62E8F83F27EBEA5F00D5CA12 /* Preview Assets.xcassets */; };
+		62E8F84927EBEC5800D5CA12 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8F84827EBEC5800D5CA12 /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62E8F83527EBEA5900D5CA12 /* MapTripper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTripper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E8F83827EBEA5900D5CA12 /* MapTripperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTripperApp.swift; sourceTree = "<group>"; };
-		62E8F83A27EBEA5900D5CA12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62E8F83A27EBEA5900D5CA12 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		62E8F83C27EBEA5F00D5CA12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62E8F83F27EBEA5F00D5CA12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62E8F84827EBEC5800D5CA12 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				62E8F83827EBEA5900D5CA12 /* MapTripperApp.swift */,
-				62E8F83A27EBEA5900D5CA12 /* ContentView.swift */,
+				62E8F84727EBEB6500D5CA12 /* View */,
+				62E8F84627EBEB5200D5CA12 /* ModelView */,
 				62E8F83C27EBEA5F00D5CA12 /* Assets.xcassets */,
 				62E8F83E27EBEA5F00D5CA12 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				62E8F83F27EBEA5F00D5CA12 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62E8F84627EBEB5200D5CA12 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				62E8F84827EBEC5800D5CA12 /* MapViewModel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		62E8F84727EBEB6500D5CA12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62E8F83A27EBEA5900D5CA12 /* MapView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62E8F83B27EBEA5900D5CA12 /* ContentView.swift in Sources */,
+				62E8F83B27EBEA5900D5CA12 /* MapView.swift in Sources */,
 				62E8F83927EBEA5900D5CA12 /* MapTripperApp.swift in Sources */,
+				62E8F84927EBEC5800D5CA12 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +290,7 @@
 				DEVELOPMENT_TEAM = 58Z3BF6XN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location so we can take you on a trip.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +320,7 @@
 				DEVELOPMENT_TEAM = 58Z3BF6XN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location so we can take you on a trip.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
